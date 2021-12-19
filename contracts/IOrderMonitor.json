@@ -1,0 +1,388 @@
+{
+  "contractName": "IOrderMonitor",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "startMonitor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "stopMonitor",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"startMonitor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"stopMonitor\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IOrderMonitor.sol\":\"IOrderMonitor\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IOrderMonitor.sol\":{\"keccak256\":\"0x48ea81dba1ed5c54afd6984c78293d0a5677eddd5b0bd241419269b9d85ae145\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0c2d9e3eb28a5e9fdd8dc744b563f1dba9a3818704fdb7f19e1e8e0ecf269421\",\"dweb:/ipfs/QmPAyD3Jt7ZqNRkLRqAAAgCcRTSCGNXw8mHUtmx6tzhBkK\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.7.5;\n\ninterface IOrderMonitor {\n\n    function startMonitor(uint256 _tokenId) external;\n\n    function stopMonitor(uint256 _tokenId) external;\n\n}",
+  "sourcePath": "/Users/aristokrates/Downloads/limit-trade-main/contracts/interfaces/IOrderMonitor.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IOrderMonitor.sol",
+    "exportedSymbols": {
+      "IOrderMonitor": [
+        11375
+      ]
+    },
+    "id": 11376,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11364,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:24:65"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 11375,
+        "linearizedBaseContracts": [
+          11375
+        ],
+        "name": "IOrderMonitor",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "b53e7660",
+            "id": 11369,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "startMonitor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11367,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11366,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11369,
+                  "src": "112:16:65",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11365,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "112:7:65",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "111:18:65"
+            },
+            "returnParameters": {
+              "id": 11368,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "138:0:65"
+            },
+            "scope": 11375,
+            "src": "90:49:65",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "d8595572",
+            "id": 11374,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "stopMonitor",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11372,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11371,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11374,
+                  "src": "166:16:65",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 11370,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "166:7:65",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "165:18:65"
+            },
+            "returnParameters": {
+              "id": 11373,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "192:0:65"
+            },
+            "scope": 11375,
+            "src": "145:48:65",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 11376,
+        "src": "59:137:65"
+      }
+    ],
+    "src": "33:163:65"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/interfaces/IOrderMonitor.sol",
+      "exportedSymbols": {
+        "IOrderMonitor": [
+          11375
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.7",
+            ".5"
+          ]
+        },
+        "id": 11364,
+        "name": "PragmaDirective",
+        "src": "33:24:65"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            11375
+          ],
+          "name": "IOrderMonitor",
+          "scope": 11376
+        },
+        "children": [
+          {
+            "attributes": {
+              "functionSelector": "b53e7660",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "startMonitor",
+              "scope": 11375,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_tokenId",
+                      "scope": 11369,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 11365,
+                        "name": "ElementaryTypeName",
+                        "src": "112:7:65"
+                      }
+                    ],
+                    "id": 11366,
+                    "name": "VariableDeclaration",
+                    "src": "112:16:65"
+                  }
+                ],
+                "id": 11367,
+                "name": "ParameterList",
+                "src": "111:18:65"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 11368,
+                "name": "ParameterList",
+                "src": "138:0:65"
+              }
+            ],
+            "id": 11369,
+            "name": "FunctionDefinition",
+            "src": "90:49:65"
+          },
+          {
+            "attributes": {
+              "functionSelector": "d8595572",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "stopMonitor",
+              "scope": 11375,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "_tokenId",
+                      "scope": 11374,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 11370,
+                        "name": "ElementaryTypeName",
+                        "src": "166:7:65"
+                      }
+                    ],
+                    "id": 11371,
+                    "name": "VariableDeclaration",
+                    "src": "166:16:65"
+                  }
+                ],
+                "id": 11372,
+                "name": "ParameterList",
+                "src": "165:18:65"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 11373,
+                "name": "ParameterList",
+                "src": "192:0:65"
+              }
+            ],
+            "id": 11374,
+            "name": "FunctionDefinition",
+            "src": "145:48:65"
+          }
+        ],
+        "id": 11375,
+        "name": "ContractDefinition",
+        "src": "59:137:65"
+      }
+    ],
+    "id": 11376,
+    "name": "SourceUnit",
+    "src": "33:163:65"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.6+commit.7338295f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2021-12-19T21:38:43.897Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
