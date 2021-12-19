@@ -45,9 +45,9 @@ Keeper.prototype.loopMonitors = async function () {
         .catch((err) => {
             console.error("processMonitor error", err);
         }).finally(() => {
-        setTimeout(() => {
-            this.processMonitor();
-        }, 60000).unref();
+            setTimeout(() => {
+                this.loopMonitors();
+            }, 60000).unref();
     });
 }
 
