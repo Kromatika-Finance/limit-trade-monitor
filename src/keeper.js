@@ -28,7 +28,7 @@ Keeper.prototype.init = async function () {
 Keeper.prototype.processMonitor = async function () {
     console.log('START loopMonitors');
 
-    const targetGasPrice = await this.web3.getGasPrice();
+    const targetGasPrice = await this.web3.eth.getGasPrice();
 
     const receipt = await this.instance.checkUpkeep.call('0x', {gasPrice: targetGasPrice});
     console.log('receipt:', receipt.upkeepNeeded);
