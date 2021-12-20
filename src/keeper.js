@@ -27,10 +27,13 @@ Keeper.prototype.init = async function () {
 
 Keeper.prototype.processMonitor = async function () {
     console.log('START loopMonitors');
-    const receipt = await this.instance.checkUpkeep.call('0x');
+
+    const targetGasPrice = await this.web3.getGasPrice();
+
+    const receipt = await this.instance.checkUpkeep.call('0x', {gasPrice: targetGasPrice});
     console.log('receipt:', receipt.upkeepNeeded);
     if (receipt.upkeepNeeded) {
-        const performUpkeep = await this.instance.performUpkeep(receipt.performData);
+        const performUpkeep = await this.instance.performUpkeep(receipt.performData, {gasPrice: targetGasPrice});
         console.log('performUpkeep:', performUpkeep);
     }
 
