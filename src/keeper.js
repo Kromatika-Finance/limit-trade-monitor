@@ -33,7 +33,10 @@ Keeper.prototype.processMonitor = async function () {
     const receipt = await this.instance.checkUpkeep.call('0x', {gasPrice: targetGasPrice});
     console.log('receipt:', receipt.upkeepNeeded);
     if (receipt.upkeepNeeded) {
-        const performUpkeep = await this.instance.performUpkeep(receipt.performData, {gasPrice: targetGasPrice});
+        const performUpkeep = await this.instance.performUpkeep(
+                receipt.performData, 
+                {gasPrice: targetGasPrice, from: this.accounts[0]}
+            );
         console.log('performUpkeep:', performUpkeep);
     }
 
